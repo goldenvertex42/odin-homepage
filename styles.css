@@ -1,15 +1,77 @@
 @font-face {
     font-family: Inter;
-    src: url(assets/inter-font.woff2);
+    src: url(assets/fonts/inter-font.woff2);
 }
 
 @font-face {
     font-family: Merriweather;
-    src: url(assets/merriweather-font.woff2);
+    src: url(assets/fonts/merriweather-font.woff2);
 }
+
+:root {
+    --dark-purple: #560BAD;
+    --light-purple: #7209B7;
+    --violet: #B5179E;
+    --pink: #FF99BE;
+    --light-blue: #4895EF;
+    --blue: #3F37C9;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* END RESET */
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .sr-only {
@@ -23,21 +85,180 @@
 
 header {
     position: relative;
+}
+
+header .background-decoration {
+    background-color: darkblue;
+    transform: skewY(calc(-25deg)) translateY(20%) scaleY(-2);
+    transform-origin: top right;
+    position: absolute;
+    box-shadow: 2px 2px 10px rgb(114, 113, 113);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.headshot-container {
+    position: relative;
     width: fit-content;
+    margin: 2rem;
+    box-shadow: 2px 2px 10px rgb(114, 113, 113);
+}
+
+
+h1, h2, h3, .screenshot {
+    font-family: Merriweather;
 }
 
 h1.name {
-    font-family: Merriweather;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 2.5px;
+    left: 20px;
+    text-align: left;
     color: white;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+.icon-link-image, .icon {
+    width: 2.75rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+main, section, body, header, .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    text-align: center;
 }
 
 body {
     font-family: Inter;
-    background-color: blue;
+    background-color: white;
+}
+
+.description {
+    margin: 0 1.5rem 1.5rem;
+}
+
+.about-me-content {
+    margin: 0 1.5rem 1.5rem;
+    font-size: 1.175rem;
+}
+
+main {
+    margin: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0.5rem;
+}
+
+.project-card {
+    width: 100%;
+    height: 60vh;
+    box-shadow: 2px 2px 10px rgb(114, 113, 113);
+}
+
+.screenshot {
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    height: 66%;
+}
+
+.dark-purple {
+    background-color: var(--dark-purple);
+}
+
+.light-purple {
+    background-color: var(--light-purple);
+}
+
+.violet {
+    background-color: var(--violet);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.dark-blue {
+    background-color: darkblue;
+}
+
+.title-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-title {
+    margin-left: 1em;
+    font-size: 1.5rem;
+}
+
+.link-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-icon-link-image {
+    width: 1.5rem;
+}
+
+
+footer {
+    background-color: darkblue;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.contact-me {
+    padding-top: 1rem;
+    gap: 30px;
+}
+
+.reach-out {
+    font-size: 1.175rem;
+}
+
+.icon {
+    width: 1rem;
+    display: inline;
+    text-align: center;
+}
+
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(14deg) brightness(106%) contrast(102%);
 }
