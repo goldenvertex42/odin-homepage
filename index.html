@@ -8,19 +8,206 @@
 </head>
 <body>
     <header>
-        <h1 class="name">Denver Clark, III</h1>
-        <picture class="headshot">
-            <source srcset="assets/Denver-1000w-1x.jpg, assets/Denver-1000w-2x.jpg"
-                    media="(min-width: 1000px)">
-            <source srcset="assets/Denver-650w-1x.jpg, assets/Denver-650w-2x.jpg"
-                    media="(min-width: 600px)">
-            <img srcset="assets/Denver-320w-1x.jpg, assets/Denver-320w-2x.jpg" alt="Headshot of Denver Clark the Third, Full-Stack Developer">
-        </picture>
+        <div class="background-decoration"></div>
+        <div class="about-me">
+        <div class="headshot-container">
+            <h1 class="name">Denver Clark, III</h1>
+            <img class="headshot" 
+                alt="Headshot of Denver Clark the Third, Full-Stack Developer"
+                srcset="assets/Denver-320w.png 320w,
+                        assets/Denver-640w.png 640w,
+                        assets/Denver-960w.png 960w,
+                        assets/Denver-1200w.png 1200w,
+                        assets/Denver-1920w.png 1920w"
+                sizes="(max-width: 600px) calc(100vw - 1rem),
+                    (max-width: 1024px) calc(50vw - 1rem),
+                    calc(33vw - 1rem)">
+        </div>
+        <h2 class="section-header about-me-header">About Me</h2>
+        <p class="about-me-content">I'm a Full-Stack Developer working through The Odin Project.
+                I have completed the Foundations, Intermediate HTML & CSS, JavaScript, and Advanced 
+                HTML & CSS courses. This homepage serves as my final project for the Advanced HTML & CSS 
+                course. It is meant to be responsive with three distinct layouts/designs for mobile, tablet,
+                and desktop. 
+        </p>
+        <div class="links about-me-links">
+            <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="icon-link-image">
+            </a>
+            <a href="https://www.linkedin.com/in/denver-clark-iii-13a428358/" class="icon-link-card">
+                <img src="assets/linkedin-plain.svg" alt="Link to Denver Clark's LinkedIn" class="icon-link-image">
+            </a>
+            <a href="https://music.apple.com/us/artist/display-only/1750409426" class="icon-link-card">
+                <img src="assets/apple-original.svg" alt="Link to Display Only's Artist Profile on Apple Music" class="icon-link-image">
+            </a>
+        </div>
+        </div>
     </header>
     <main>
-        <section class="about-me">About Me</section>
-        <section class="my-work">My Projects</section>
+        <section class="my-projects">
+            <h2 class="section-header my-projects-header">My Projects</h2>
+            <div class="grid">
+                <article class="project-card">
+                    <div class="screenshot flex dark-purple">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex light-purple">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex violet">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex pink">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex light-blue">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex blue">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="screenshot flex dark-blue">
+                        <p>screenshot of project</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="title-link-container">
+                            <h3 class="card-title">Project Name</h3>
+                            <div class="link-container">
+                                <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                                    <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="project-icon-link-image">
+                                </a>
+                                <a href="" class="icon-link-card">
+                                    <img src="assets/external-link.svg" alt="This is a dummy link" class="project-icon-link-image">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="description">Short description of the project.<br>Just a couple of sentences will do.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="contact-me">
+            <h2 class="section-header contact-me-header">Contact Me</h2>
+            <p class="reach-out">Please get in touch if you think our work could be mutually beneficial!</p>
+            <p>1234 Random Road, Randomtown, Louisiana, 12345</p>
+            <div class="phone-email-container">
+                <p class="flex"><img src="assets/phone.svg" alt="" class="icon filter-white"> 555-555-5555</p>
+                <p class="flex"><img src="assets/email.svg" alt="" class="icon filter-white"> fabled93@gmail.com</p>
+            </div>
+            <div class="links contact-links">
+            <a href="https://github.com/goldenvertex42" class="icon-link-card">
+                <img src="assets/github-original.svg" alt="Link to Denver Clark's GitHub" class="icon-link-image filter-white">
+            </a>
+            <a href="https://www.linkedin.com/in/denver-clark-iii-13a428358/" class="icon-link-card">
+                <img src="assets/linkedin-plain.svg" alt="Link to Denver Clark's LinkedIn" class="icon-link-image filter-white">
+            </a>
+            <a href="https://music.apple.com/us/artist/display-only/1750409426" class="icon-link-card">
+                <img src="assets/apple-original.svg" alt="Link to Display Only's Artist Profile on Apple Music" class="icon-link-image filter-white">
+            </a>
+        </div>
+        </section>
+        <picture>
+            <source media="(width >= 600px)" srcset="assets/Oliver-landscape-2x.png 2x, assets/Oliver-landscape-1x.png" />
+            <img srcset="assets/Oliver-portrait-2x.png 2x, assets/Oliver-portrait-1x.png" alt="A cute fluffy cat named Oliver">
+        </picture>
+    </footer>
 </body>
 </html>
