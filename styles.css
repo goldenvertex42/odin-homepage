@@ -388,6 +388,10 @@ footer {
         margin-top: 1.5rem;
     }
     
+    header .background-decoration {
+        transform: skewY(calc(-15deg)) translateY(20%) scaleY(-2);
+    }
+
     .about-me-header {
         text-align: left;
         margin-left: 1.5rem;
